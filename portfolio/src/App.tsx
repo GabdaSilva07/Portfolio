@@ -3,10 +3,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 //Components
 import Navbar from "./Components/Navbar/Navbar";
-import Home from "./Components/Home/Home";
-import Project from "./Components/Project/Project";
-import About from "./Components/About/About";
 import Footer from "./Components/Footer/Footer";
+
+//Pages
+import Home from "./Pages/Home/Home";
+import Project from "./Pages/Project/Project";
+import About from "./Pages/About/About";
+import Error from "./Pages/Error/Error";
 
 //Styles
 import "./Styles/App.css";
@@ -21,6 +24,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="projects" element={<Project />} />
             <Route path="about" element={<About />} />
+            <Route path="*" element={<Error />} />
           </Routes>
           <Footer />
         </div>
