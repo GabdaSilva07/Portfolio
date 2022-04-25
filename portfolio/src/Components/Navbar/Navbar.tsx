@@ -1,8 +1,10 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { Button } from "../Button/Button";
 
 export default function Navbar() {
+
   return (
     <nav className="Navbar-Wrapper">
       <div className="Logo-Container">
@@ -27,7 +29,14 @@ export default function Navbar() {
           </ul>
         </div>
 
-        <button>Contact Me</button>
+        <Button
+          style={"Primary-Style"}
+          size={"Large"}
+          color={""}
+          onClick={undefined}
+        >
+          Contact Me
+        </Button>
       </div>
     </nav>
   );

@@ -1,0 +1,71 @@
+/* Style for all buttons */
+.btn {
+  padding: 8px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-Primary-Style {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+.btn-Primary-Outline {
+  background-color: transparent;
+  border: 1px solid var(--black);
+  color: var(--black);
+  padding: 8px 20px;
+  transition: all 0.3s ease-out;
+}
+
+.btn-Small-Style {
+  padding: 4px;
+}
+
+.btn-Medium {
+  padding: 8px 20px;
+  font-size: 0.7rem;
+}
+
+.btn-Large {
+  padding: 8px 20px;
+  font-size: 1rem;
+}
+
+.btn-Phone {
+  text-align: center;
+  border-radius: 4px;
+  width: 80%;
+  text-decoration: none;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+  transition: all 0.3s ease-out;
+}
+
+.btn-Large:hover,
+.btn-Medium:hover,
+.btn-Phone:hover {
+  transition: all 0.4s ease-out;
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+.btn-Primary {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.btn-Primary:hover {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+.btn-Secondary {
+  background-color: var(--yellow);
+  color: var(--black);
+}

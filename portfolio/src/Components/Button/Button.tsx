@@ -48,9 +48,9 @@ export function Button({ children, style, size, color, onClick }: IButton) {
 
   return (
     <button
-      className={`btn ${checkButtonStyle(style)} ${checkButtonSize(
+      className={`btn btn-${checkButtonStyle(style)} btn-${checkButtonSize(
         size
-      )} ${checkButtonColor(color)}`}
+      )} btn-${checkButtonColor(color)}`}
       onClick={onClick}
     >
       {children}
